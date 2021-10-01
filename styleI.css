@@ -1,0 +1,118 @@
+.allForm {
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.formParag {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#contactUs {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0 8px 0;
+  display: inline-block;
+  color: grey;
+  border: none;
+  border-bottom: 2px solid #152450;
+}
+
+textarea {
+  width: 80%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  margin: 12px 0;
+}
+
+.btnsub {
+  width: 100%;
+  background-color: #152450;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.meetTeam {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 55px;
+}
+
+div.card-img1 {
+  content: url(https://images.unsplash.com/photo-1571752726703-5e7d1f6a986d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1165&q=80);
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+div.card-img2 {
+  content: url(https://images.unsplash.com/photo-1513039464749-94912b3841ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80);
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+div.card-img3 {
+  content: url(https://images.unsplash.com/photo-1535443120147-89aef0b5327a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+div.card-img4 {
+  content: url(https://images.unsplash.com/photo-1520990056956-5d29b4884100?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1133&q=80);
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+div.card-img5 {
+  content: url(https://images.unsplash.com/photo-1550016681-60a1d9d23bf7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1163&q=80);
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.team {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.member {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.member-name {
+  margin: 10px 0px;
+  text-align: center;
+}
