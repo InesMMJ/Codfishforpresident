@@ -61,58 +61,64 @@ textarea {
   margin-top: 55px;
 }
 
-div.card-img1 {
-  content: url(https://images.unsplash.com/photo-1571752726703-5e7d1f6a986d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1165&q=80);
-  border-radius: 10px 10px 0 0;
-  background-size: cover;
-  background-position: center;
-}
-div.card-img2 {
-  content: url(https://images.unsplash.com/photo-1513039464749-94912b3841ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80);
-  border-radius: 10px 10px 0 0;
-  background-size: cover;
-  background-position: center;
-}
-div.card-img3 {
-  content: url(https://images.unsplash.com/photo-1535443120147-89aef0b5327a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-
-  border-radius: 10px 10px 0 0;
-  background-size: cover;
-  background-position: center;
-}
-div.card-img4 {
-  content: url(https://images.unsplash.com/photo-1520990056956-5d29b4884100?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1133&q=80);
-  border-radius: 10px 10px 0 0;
-  background-size: cover;
-  background-position: center;
-}
-div.card-img5 {
-  content: url(https://images.unsplash.com/photo-1550016681-60a1d9d23bf7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1163&q=80);
-  border-radius: 10px 10px 0 0;
-  background-size: cover;
-  background-position: center;
-}
-
 .team {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  align-items: stretch;
   flex-wrap: wrap;
 }
 
-.member {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border-radius: 10px;
-  width: 100px;
-  height: 100px;
+/*.member {
+  border-radius: 50px;
+  width: 150px;
+  height: 150px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .member-name {
-  margin: 10px 0px;
+  margin: 0px 0px;
   text-align: center;
+} */
+
+.member {
+  position: relative;
+  width: 150px;
+}
+
+.imageI {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.member-name {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.member:hover .imageI {
+  opacity: 0.3;
+}
+
+.member:hover .member-name {
+  opacity: 1;
+}
+
+.card-title {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
