@@ -1,0 +1,289 @@
+/* NEW CSS FUSION */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: black;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /*smooth*/
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+.navbar2 {
+  position: fixed;
+  top: 3rem;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+
+.navbar2 ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+.navbar2 ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.navbar2 ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-style: italic;
+}
+.navbar2 ul li a:hover {
+  color: lightblue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+section#home {
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+
+  padding-top: 6%;
+  text-align: center;
+}
+
+section#facts {
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  transform: scaleX(-1);
+  padding-top: 6%;
+  text-align: center;
+}
+
+section#recipe {
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  padding-top: 6%;
+  text-align: center;
+}
+
+section#rest {
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  transform: scaleX(-1);
+  padding-top: 6%;
+  text-align: center;
+}
+section#form {
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  padding-top: 6%;
+  text-align: center;
+}
+/* TESTS NAVBAR FROM HUGO --------------------------- */
+
+.navigation2 ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+.navigation2 ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.navigation2 ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+.navigation2 ul li a:hover {
+  color: lightblue;
+}
+
+.navigation2 {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+}
+
+.box1 {
+  display: flex;
+  width: 100%;
+
+  height: 100%;
+  padding: 30px;
+}
+.inbox1 {
+  max-height: 100%;
+  width: 46%;
+}
+
+.img1 {
+  width: 100%;
+  border: 0.4rem solid white;
+  margin-bottom: 0%;
+}
+
+iframe {
+  margin-top: 27%;
+  width: 100%;
+  height: 30%;
+}
+
+.reserve {
+  background-color: black;
+  margin-top: 1rem;
+  padding: 2rem;
+  border: 0.3rem solid white;
+  color: blanchedalmond;
+  margin-top: 0%;
+}
+.reserve a {
+  color: white;
+  font-size: 1.5rem;
+}
+.reserve a:hover {
+  color: lightblue;
+}
+
+#text1 {
+  margin-top: 3%;
+  margin-left: 30%;
+  width: 50%;
+}
+#text1 p {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+}
+.title-italic {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  justify-content: flex-end;
+}
+
+.multibox2 {
+  transform: scaleX(-1);
+}
+.inbox2 {
+  transform: scaleX(-1);
+}
+
+.multibox3 {
+  transform: scaleX(-1);
+}
+.inbox3 {
+  transform: scaleX(-1);
+}
+
+/* ------------- 3rd navbar ------------*/
+
+.navbar3 ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+.navbar3 ul li {
+  margin: 1rem 2.5rem;
+  padding: 1rem;
+}
+.navbar3 ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border-bottom: 0.1rem solid black;
+  font-weight: bold;
+  font-style: italic;
+}
+.navbar3 ul li a:hover {
+  color: lightblue;
+}
+
+/* old STUFF -----------------------------------*/
+/* .newContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rest1 {
+  width: 30%;
+  margin-bottom: 7%;
+}
+
+.rest2 {
+  width: 45%;
+  padding-top: 11%;
+}
+.box3 {
+  display: flex;
+  justify-content: right;
+}
+.rest3 {
+  width: 40%;
+
+  padding-bottom: 3%;
+}
+
+.rest4 {
+  width: 45%;
+  padding-bottom: 5%;
+}
+
+.rest5 {
+  width: 46%;
+}
+.box5 {
+  display: flex;
+  justify-content: right;
+}
+
+.menus {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+  font-size: 1.7rem;
+}
+
+.box1 {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin-top: 0;
+}
+
+.menu-title {
+  border-bottom: 3px solid black;
+  margin-top: 40%;
+} */
