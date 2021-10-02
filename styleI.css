@@ -16,6 +16,9 @@
 
 #contactUs {
   text-align: center;
+  margin: 0;
+  padding-top: 8%;
+  padding-bottom: 2%;
 }
 
 input[type="text"],
@@ -26,7 +29,7 @@ input[type="email"] {
   display: inline-block;
   color: grey;
   border: none;
-  border-bottom: 2px solid #152450;
+  border-bottom: 2px solid black;
 }
 
 textarea {
@@ -40,15 +43,52 @@ textarea {
   margin: 12px 0;
 }
 
-.btnsub {
-  width: 100%;
-  background-color: #152450;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0 8px 0;
-  border: none;
-  border-radius: 4px;
+.btn {
   cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: white;
+  font-size: 22px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+.btn:after,
+.btn:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+.btn:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+.btn:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+.btn:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.btn:hover:before,
+.btn:hover:after {
+  width: 100%;
+  height: 100%;
+}
+.data-btn {
+  margin-top: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .meetTeam {
@@ -61,58 +101,82 @@ textarea {
   margin-top: 55px;
 }
 
-div.card-img1 {
-  content: url(https://images.unsplash.com/photo-1571752726703-5e7d1f6a986d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1165&q=80);
-  border-radius: 10px 10px 0 0;
-  background-size: cover;
-  background-position: center;
-}
-div.card-img2 {
-  content: url(https://images.unsplash.com/photo-1513039464749-94912b3841ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80);
-  border-radius: 10px 10px 0 0;
-  background-size: cover;
-  background-position: center;
-}
-div.card-img3 {
-  content: url(https://images.unsplash.com/photo-1535443120147-89aef0b5327a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-
-  border-radius: 10px 10px 0 0;
-  background-size: cover;
-  background-position: center;
-}
-div.card-img4 {
-  content: url(https://images.unsplash.com/photo-1520990056956-5d29b4884100?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1133&q=80);
-  border-radius: 10px 10px 0 0;
-  background-size: cover;
-  background-position: center;
-}
-div.card-img5 {
-  content: url(https://images.unsplash.com/photo-1550016681-60a1d9d23bf7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1163&q=80);
-  border-radius: 10px 10px 0 0;
-  background-size: cover;
-  background-position: center;
-}
-
 .team {
   margin-top: 10px;
   display: flex;
-  justify-content: center;
-  align-items: stretch;
+  justify-content: space-around;
   flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .member {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border-radius: 10px;
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+  width: 150px;
+  margin-bottom: 80px;
+  margin-top: 25px;
+}
+
+.member::before,
+.member::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  border: 2px solid rgb(49, 49, 49);
+  transition: all 0.25s ease-out;
+}
+.member::before {
+  background-color: rgb(49, 49, 49);
+  top: -15px;
+  left: -15px;
+}
+.member::after {
+  bottom: -15px;
+  right: -15px;
+}
+.member:hover::before {
+  top: 15px;
+  left: 15px;
+}
+.member:hover::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+.imageI {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
 }
 
 .member-name {
-  margin: 10px 0px;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.member:hover .imageI {
+  opacity: 0.7;
+}
+
+.member:hover .member-name {
+  opacity: 0.8;
+}
+
+.card-title {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }

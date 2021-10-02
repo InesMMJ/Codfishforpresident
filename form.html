@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styleDiogo.css" />
+    <link rel="stylesheet" href="styleI.css" />
+    <link rel="stylesheet" type="text/css" href="HSheaderFooterBacalhau.css" />
     <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/6d09d607f3.js"
@@ -13,18 +14,19 @@
     <title>ContactUs</title>
   </head>
   <body id="bodyForm">
-    <div class="main">
-      <nav class="navigation">
-        <ul>
-          <li>
-            <a href="/restaurants.html" title="Restaurants">Restaurants</a>
-          </li>
-          <li><a href="/recipes.html" title="Recipes">Recipes</a></li>
-          <li><a href="/facts.html" title="Facts">Fun Facts</a></li>
-          <li><a href="/form.html" title="Contact Us">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
+    <header class="headerHS">
+      <a href="" class="logoHS">BA_CALHAU</a>
+      <input class="menu-btnHS" type="checkbox" id="menu-btn" />
+      <label class="menu-iconHS" for="menu-btn"
+        ><span class="naviconHS"></span
+      ></label>
+      <ul class="menuHS">
+        <li><a href="/restaurants.html" title="Restaurants">RESTAURANTS</a></li>
+        <li><a href="/recipes.html" title="Recipes">RECIPES</a></li>
+        <li><a href="/facts.html" title="Facts">FUN FACTS</a></li>
+        <li><a href="/form.html" title="Contact Us">CONTACT US</a></li>
+      </ul>
+    </header>
     <h1 id="contactUs">Contact Us</h1>
 
     <div class="formParag">
@@ -59,9 +61,11 @@
         <label for="myfile">Select a file</label>
         <i class="far fa-file-alt"></i>
         <input type="file" id="myfile" name="myfile" /><br />
-
-        <input class="btnsub" type="submit" value="Make a Suggestion" />
       </form>
+
+      <div class="data-btn">
+        <span class="btn">Make a Suggestion</span>
+      </div>
 
       <div class="meetTeam">
         <h4>Meet the team</h4>
@@ -70,44 +74,92 @@
     </div>
     <div class="team">
       <div class="member">
-        <div class="card-img1"></div>
+        <img
+          src="https://images.unsplash.com/photo-1571752726703-5e7d1f6a986d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1165&q=80"
+          alt="Gonçalo"
+          class="imageI"
+        />
 
         <div class="member-name">
-          <h5 class="card-title">Vasquez</h5>
+          <div class="card-title">Gonçalo</div>
         </div>
       </div>
 
       <div class="member">
-        <div class="card-img2"></div>
+        <img
+          src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80"
+          alt="diogo"
+          class="imageI"
+        />
 
         <div class="member-name">
-          <h5 class="card-title">Diogo</h5>
+          <div class="card-title">Diogo</div>
         </div>
       </div>
 
       <div class="member">
-        <div class="card-img3"></div>
+        <img
+          src="https://images.unsplash.com/photo-1535443120147-89aef0b5327a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt="hugo"
+          class="imageI"
+        />
 
         <div class="member-name">
-          <h5 class="card-title">Hugo</h5>
+          <div class="card-title">Hugo</div>
         </div>
       </div>
 
       <div class="member">
-        <div class="card-img4"></div>
+        <img
+          src="https://images.unsplash.com/photo-1520990056956-5d29b4884100?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1133&q=80"
+          alt="ines"
+          class="imageI"
+        />
 
         <div class="member-name">
-          <h5 class="card-title">Inês</h5>
+          <div class="card-title">Inês</div>
         </div>
       </div>
 
       <div class="member">
-        <div class="card-img5"></div>
+        <img
+          src="https://images.unsplash.com/photo-1550016681-60a1d9d23bf7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1163&q=80"
+          alt="rui"
+          class="imageI"
+        />
 
         <div class="member-name">
-          <h5 class="card-title">Rui</h5>
+          <div class="card-title">Rui</div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="rounded-social-buttons">
+        <a
+          class="social-button facebook"
+          href="https://www.facebook.com/"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          class="social-button twitter"
+          href="https://www.twitter.com/"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          class="social-button youtube"
+          href="https://www.youtube.com/"
+          target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a
+          class="social-button instagram"
+          href="https://www.instagram.com/"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>
