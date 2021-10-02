@@ -21,7 +21,7 @@ body {
   /*smooth*/
   overflow-y: scroll;
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: y mandatory;
 }
 .navbar2 {
   position: fixed;
