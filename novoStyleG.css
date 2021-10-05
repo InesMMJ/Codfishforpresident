@@ -37,21 +37,28 @@ body {
   list-style: none;
   width: 100%;
   justify-content: center;
+  background: none;
 }
 .navbar2 ul li {
   margin: 0 1rem;
   padding: 1rem;
+  background: none;
 }
 .navbar2 ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
   font-style: italic;
+  background: none;
 }
 .navbar2 ul li a:hover {
   color: lightblue;
+  background: none;
 }
 
+.nav2 {
+  background: none;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -248,6 +255,7 @@ span a:hover {
 .multibox2 {
   transform: scaleX(-1);
   width: 100%;
+  padding-top: 0.7rem;
 }
 .inbox2 {
   display: flex;
@@ -261,6 +269,7 @@ span a:hover {
 .multibox3 {
   width: 100%;
   transform: scaleX(-1);
+  padding-top: 0.7rem;
 }
 .inbox3 {
   display: flex;
@@ -274,6 +283,7 @@ span a:hover {
 .multibox1 {
   width: 100%;
   padding-left: 1rem;
+  padding-top: 0.7rem;
 }
 
 .listSize {
