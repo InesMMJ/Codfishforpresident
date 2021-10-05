@@ -142,29 +142,37 @@ section#form {
   padding: 30px;
 }
 .inbox1 {
-  max-height: 100%;
-  width: 46%;
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  justify-content: start;
+  align-items: center;
 }
 
 .img1 {
-  width: 100%;
+  width: 60%;
   border: 0.4rem solid white;
   margin-bottom: 0%;
+  border-radius: 25px;
+  margin-top: 1rem;
 }
 
 iframe {
   margin-top: 27%;
-  width: 100%;
+  width: 60%;
   height: 30%;
+  border-radius: 25px;
 }
 
 .reserve {
-  background-color: black;
-  margin-top: 1rem;
-  padding: 2rem;
-  border: 0.3rem solid white;
+  background-image: url("https://trello.com/1/cards/615b69cd4921261cac3555dc/attachments/615b6f5f55a3d7835bd616ac/download/booknow2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 3rem;
+
   color: blanchedalmond;
-  margin-top: 0%;
+  margin-top: 5%;
 }
 .reserve a {
   color: white;
@@ -192,98 +200,491 @@ iframe {
 
 .multibox2 {
   transform: scaleX(-1);
+  width: 100%;
 }
 .inbox2 {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  justify-content: start;
+  align-items: center;
   transform: scaleX(-1);
 }
 
 .multibox3 {
+  width: 100%;
   transform: scaleX(-1);
 }
 .inbox3 {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  justify-content: start;
+  align-items: center;
   transform: scaleX(-1);
 }
 
-/* ------------- 3rd navbar ------------*/
-
-.navbar3 ul {
-  display: flex;
-  list-style: none;
+.multibox1 {
   width: 100%;
+  padding-left: 1rem;
+}
+
+.listSize {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding-left: 1rem;
 }
-.navbar3 ul li {
-  margin: 1rem 2.5rem;
-  padding: 1rem;
+
+/* ----------------- ACCORDION ----------------- */
+body {
+  background: #fff;
+  font-family: "Flamenco", serif;
 }
-.navbar3 ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  border-bottom: 0.1rem solid black;
+
+h1 {
+  color: #000000;
+  font-weight: normal;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/*_________________  Accordion
+________________________________________*/
+.accordion {
+  position: relative;
+  margin: 60px auto;
+  width: 80%;
+}
+
+[id*="open-accordion"],
+[id*="close-accordion"] {
+  background: #ccc;
+  border-bottom: 1px solid #ffffff;
+  line-height: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 99%;
+}
+
+[id*="close-accordion"] {
+  display: none;
+}
+
+.accordion a {
+  color: #000;
+  font-size: 1.25em;
   font-weight: bold;
-  font-style: italic;
-}
-.navbar3 ul li a:hover {
-  color: lightblue;
-}
-
-/* old STUFF -----------------------------------*/
-/* .newContainer {
-  display: flex;
-  justify-content: space-around;
+  padding-left: 2%;
+  text-decoration: none;
+  text-shadow: none;
 }
 
-.rest1 {
-  width: 30%;
-  margin-bottom: 7%;
+[id*="open-accordion"]:after,
+[id*="close-accordion"]:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
 }
 
-.rest2 {
-  width: 45%;
-  padding-top: 11%;
-}
-.box3 {
-  display: flex;
-  justify-content: right;
-}
-.rest3 {
-  width: 40%;
-
-  padding-bottom: 3%;
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
-.rest4 {
-  width: 45%;
-  padding-bottom: 5%;
+.accordion-content {
+  background: rgba(255, 255, 255, 0.5);
+  height: 0;
+  margin: -1px auto 0;
+  padding: 0 2.5%;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
 }
 
-.rest5 {
-  width: 46%;
-}
-.box5 {
-  display: flex;
-  justify-content: right;
-}
-
-.menus {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: start;
-  font-size: 1.7rem;
-}
-
-.box1 {
-  display: flex;
-  align-self: flex-start;
-  flex-direction: column;
-  width: 40%;
+.accordion span:target ~ .accordion-content {
+  display: block;
   height: auto;
-  margin-top: 0;
+  padding-bottom: 25px;
+  padding-top: 10px;
 }
 
-.menu-title {
-  border-bottom: 3px solid black;
-  margin-top: 40%;
-} */
+.accordion span:target ~ [id*="close-accordion"] {
+  display: block;
+}
+
+.accordion span:target ~ [id*="open-accordion"] {
+  display: none;
+}
+
+.accordion span:target ~ [id*="close-accordion"]:after {
+  border-top: 10px solid #333;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+/*  ---------------------- accordion 2 test -------------- */
+
+.accordionT {
+  position: relative;
+  margin: 60px auto;
+  width: 80%;
+}
+
+[id*="open-accordion"],
+[id*="close-accordion"] {
+  background: #ccc;
+  border-bottom: 1px solid #ffffff;
+  line-height: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 99%;
+}
+
+[id*="close-accordion"] {
+  display: none;
+}
+
+.accordionT a {
+  color: #000;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 2%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+[id*="open-accordion"]:after,
+[id*="close-accordion"]:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.accordionT-content {
+  background: rgba(255, 255, 255, 0.5);
+  height: 0;
+  margin: -1px auto 0;
+  padding: 0 2.5%;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+}
+
+.accordionT span:target ~ .accordionT-content {
+  display: block;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.accordionT span:target ~ [id*="close-accordion"] {
+  display: block;
+}
+
+.accordionT span:target ~ [id*="open-accordion"] {
+  display: none;
+}
+
+.accordionT span:target ~ [id*="close-accordion"]:after {
+  border-top: 10px solid #333;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+
+/* --------------------- ACCORDION 3 -------------------- */
+.accordionC {
+  position: relative;
+  margin: 60px auto;
+  width: 80%;
+}
+
+[id*="open-accordion"],
+[id*="close-accordion"] {
+  background: #ccc;
+  border-bottom: 1px solid #ffffff;
+  line-height: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 99%;
+}
+
+[id*="close-accordion"] {
+  display: none;
+}
+
+.accordionC a {
+  color: #000;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 2%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+[id*="open-accordion"]:after,
+[id*="close-accordion"]:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.accordionC-content {
+  background: rgba(255, 255, 255, 0.5);
+  height: 0;
+  margin: -1px auto 0;
+  padding: 0 2.5%;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+}
+
+.accordionC span:target ~ .accordionC-content {
+  display: block;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.accordionC span:target ~ [id*="close-accordion"] {
+  display: block;
+}
+
+.accordionC span:target ~ [id*="open-accordion"] {
+  display: none;
+}
+
+.accordionC span:target ~ [id*="close-accordion"]:after {
+  border-top: 10px solid #333;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+
+/* -------------------- ACCORDION 4 -------------------- */
+.accordionD {
+  position: relative;
+  margin: 60px auto;
+  width: 80%;
+  margin-top: 3%;
+}
+
+[id*="open-accordion"],
+[id*="close-accordion"] {
+  background: #ccc;
+  border-bottom: 1px solid #ffffff;
+  line-height: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 99%;
+}
+
+[id*="close-accordion"] {
+  display: none;
+}
+
+.accordionD a {
+  color: #000;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 2%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+[id*="open-accordion"]:after,
+[id*="close-accordion"]:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.accordionD-content {
+  background: rgba(255, 255, 255, 0.5);
+  height: 0;
+  margin: -1px auto 0;
+  padding: 0 2.5%;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+}
+
+.accordionD span:target ~ .accordionD-content {
+  display: block;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.accordionD span:target ~ [id*="close-accordion"] {
+  display: block;
+}
+
+.accordionD span:target ~ [id*="open-accordion"] {
+  display: none;
+}
+
+.accordionD span:target ~ [id*="close-accordion"]:after {
+  border-top: 10px solid #333;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+
+/* ------------------- ACCORDION 5 ----------------- */
+
+.accordionE {
+  position: relative;
+  margin: 60px auto;
+  width: 80%;
+  margin-top: 3%;
+}
+
+[id*="open-accordion"],
+[id*="close-accordion"] {
+  background: #ccc;
+  border-bottom: 1px solid #ffffff;
+  line-height: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 99%;
+}
+
+[id*="close-accordion"] {
+  display: none;
+}
+
+.accordionE a {
+  color: #000;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 2%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+[id*="open-accordion"]:after,
+[id*="close-accordion"]:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.accordionE-content {
+  background: rgba(255, 255, 255, 0.5);
+  height: 0;
+  margin: -1px auto 0;
+  padding: 0 2.5%;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+}
+
+.accordionE span:target ~ .accordionE-content {
+  display: block;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.accordionE span:target ~ [id*="close-accordion"] {
+  display: block;
+}
+
+.accordionE span:target ~ [id*="open-accordion"] {
+  display: none;
+}
+
+.accordionE span:target ~ [id*="close-accordion"]:after {
+  border-top: 10px solid #333;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
