@@ -49,7 +49,7 @@ class Blob {
       ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
       // ctx.lineTo(p2.x, p2.y);
 
-      ctx.fillStyle = "#000000";
+      ctx.fillStyle = "white";
       // ctx.fillRect(p1.x-2.5, p1.y-2.5, 5, 5);
 
       p1 = p2;
@@ -63,7 +63,7 @@ class Blob {
     // ctx.closePath();
     ctx.fillStyle = this.color;
     ctx.fill();
-    ctx.strokeStyle = "#000000";
+    ctx.strokeStyle = "white";
     // ctx.stroke();
 
     /*
@@ -86,7 +86,7 @@ class Blob {
     this._color = value;
   }
   get color() {
-    return this._color || "#000000";
+    return this._color || "white";
   }
 
   set canvas(value) {

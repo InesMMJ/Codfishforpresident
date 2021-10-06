@@ -11,7 +11,8 @@ body {
 canvas {
   position: fixed;
   touch-action: none;
-  bottom: 70px;
+  bottom: 90px;
+  opacity: 15%;
 }
 section {
   position: absolute;
@@ -32,7 +33,7 @@ section::before {
   z-index: 10;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 section .colorD {
   position: absolute;
