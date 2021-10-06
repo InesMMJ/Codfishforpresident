@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styleI.css" />
     <link rel="stylesheet" type="text/css" href="HSheaderFooterBacalhau.css" />
-    <script src="index.js"></script>
+    <script src="scriptInes.js"></script>
     <script
       src="https://kit.fontawesome.com/6d09d607f3.js"
       crossorigin="anonymous"
@@ -15,7 +15,13 @@
   </head>
   <body id="bodyForm">
     <header class="headerHS">
-      <a href="" class="logoHS">BA_CALHAU</a>
+      <a href="/indexD.html">
+        <img
+          src="assets/bacalhau4.png"
+          class="logoHS"
+          alt="Logo Bacalhau White"
+        />
+      </a>
       <input class="menu-btnHS" type="checkbox" id="menu-btn" />
       <label class="menu-iconHS" for="menu-btn"
         ><span class="naviconHS"></span
@@ -23,12 +29,11 @@
       <ul class="menuHS">
         <li><a href="/restaurants.html" title="Restaurants">RESTAURANTS</a></li>
         <li><a href="/recipes.html" title="Recipes">RECIPES</a></li>
-        <li><a href="/facts.html" title="Facts">FUN FACTS</a></li>
+        <li><a href="/funfacts.html" title="Facts">FUN FACTS</a></li>
         <li><a href="/form.html" title="Contact Us">CONTACT US</a></li>
       </ul>
     </header>
-    <h1 id="contactUs">Contact Us</h1>
-
+    <div class="contactUs"><h1 id="contactUs">Contact Us</h1></div>
     <div class="formParag">
       <h4>We value your suggestions.</h4>
       <p>
@@ -64,7 +69,7 @@
       </form>
 
       <div class="data-btn">
-        <span class="btn">Make a Suggestion</span>
+        <span onclick="myButton()"><a href="#"></a></span>
       </div>
 
       <div class="meetTeam">

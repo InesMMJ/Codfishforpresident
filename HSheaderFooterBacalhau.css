@@ -124,6 +124,11 @@ a {
   top: 0;
 }
 
+.logoHS{
+  width: 4rem;
+  
+}
+
 /* 48em = 768px */
 
 @media (min-width: 860px) {

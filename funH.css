@@ -1,0 +1,744 @@
+/* NEW CSS FUSION */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding-top: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: black;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /*smooth*/
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.navbar2 {
+  position: fixed;
+  top: 3rem;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+
+.navbar2 ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  background: none;
+}
+.navbar2 ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+  background: none;
+}
+.navbar2 ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-style: italic;
+  background: none;
+}
+.navbar2 ul li a:hover {
+  color: lightblue;
+  background: none;
+}
+
+.nav2 {
+  background: none;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+section#home {
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  padding-top: 6%;
+  text-align: justify;
+}
+
+section#facts {
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  transform: scaleX(-1);
+  padding-top: 6%;
+  text-align: justify;
+}
+
+section#recipe {
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  padding-top: 6%;
+  text-align: justify;
+}
+
+section#rest {
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  transform: scaleX(-1);
+  padding-top: 6%;
+  text-align: justify;
+}
+section#form {
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  padding-top: 6%;
+  text-align: justify;
+}
+/* TESTS NAVBAR FROM HUGO --------------------------- */
+
+.navigation2 ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+.navigation2 ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.navigation2 ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+.navigation2 ul li a:hover {
+  color: lightblue;
+}
+
+.navigation2 {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+}
+
+.box1 {
+  display: flex;
+  width: 100%;
+
+  height: 100%;
+  padding: 30px;
+}
+.inbox1 {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  justify-content: start;
+  align-items: center;
+}
+
+.img1 {
+  width: 100%;
+  border: 0.4rem solid white;
+  margin-bottom: 0%;
+  border-radius: 25px;
+  margin-top: 14rem;
+}
+
+iframe {
+  margin-top: 27%;
+  width: 60%;
+  height: 30%;
+  border-radius: 25px;
+}
+
+/*-------------- NEW BUTTON --------------*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+
+span {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+  margin-top: 1rem;
+}
+span a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+span a:before,
+span a:after {
+  position: absolute;
+  content: "Book Now";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after {
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+/* ^^^^^^^^^^^^^BUTTON ^^^^^^^^^^^^ */
+
+.reserve {
+  background-image: url("https://trello.com/1/cards/615b69cd4921261cac3555dc/attachments/615b6f5f55a3d7835bd616ac/download/booknow2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 3rem;
+
+  color: blanchedalmond;
+  margin-top: 5%;
+}
+.reserve a {
+  color: white;
+  font-size: 1.5rem;
+}
+.reserve a:hover {
+  color: lightblue;
+}
+
+#text1 {
+  margin-top: 3%;
+  margin-left: 30%;
+  width: 50%;
+}
+#text1 p {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+}
+.title-italic {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  justify-content: flex-end;
+}
+
+.multibox2 {
+  transform: scaleX(-1);
+  width: 100%;
+  padding-top: 0.7rem;
+}
+.inbox2 {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  justify-content: start;
+  align-items: center;
+  transform: scaleX(-1);
+}
+
+.multibox3 {
+  width: 100%;
+  transform: scaleX(-1);
+  padding-top: 0.7rem;
+}
+.inbox3 {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  justify-content: start;
+  align-items: center;
+  transform: scaleX(-1);
+}
+
+.multibox1 {
+  width: 100%;
+  padding-left: 1rem;
+  padding-top: 0.7rem;
+}
+
+.listSize {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+/* ----------------- ACCORDION ----------------- */
+body {
+  background: #fff;
+  font-family: "Flamenco", serif;
+}
+
+h1 {
+  color: #000000;
+  font-weight: normal;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/*_________________  Accordion
+________________________________________*/
+.accordion {
+  position: relative;
+  margin: 8rem auto;
+  width: 80%;
+}
+
+[id*="open-accordion"],
+[id*="close-accordion"] {
+  background: #ccc;
+  border-bottom: 1px solid #ffffff;
+  line-height: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 99%;
+}
+
+[id*="close-accordion"] {
+  display: none;
+}
+
+.accordion a {
+  color: #000;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 2%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+[id*="open-accordion"]:after,
+[id*="close-accordion"]:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.accordion-content {
+  background: rgba(255, 255, 255, 0.5);
+  height: 0;
+  margin: -1px auto 0;
+  padding: 0 2.5%;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+}
+
+.accordion span:target ~ .accordion-content {
+  display: block;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.accordion span:target ~ [id*="close-accordion"] {
+  display: block;
+}
+
+.accordion span:target ~ [id*="open-accordion"] {
+  display: none;
+}
+
+.accordion span:target ~ [id*="close-accordion"]:after {
+  border-top: 10px solid #333;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+/*  ---------------------- accordion 2 test -------------- */
+
+.accordionT {
+  position: relative;
+  margin: 8rem auto;
+  width: 80%;
+}
+
+[id*="open-accordion"],
+[id*="close-accordion"] {
+  background: #ccc;
+  border-bottom: 1px solid #ffffff;
+  line-height: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 99%;
+}
+
+[id*="close-accordion"] {
+  display: none;
+}
+
+.accordionT a {
+  color: #000;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 2%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+[id*="open-accordion"]:after,
+[id*="close-accordion"]:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.accordionT-content {
+  background: rgba(255, 255, 255, 0.5);
+  height: 0;
+  margin: -1px auto 0;
+  padding: 0 2.5%;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+}
+
+.accordionT span:target ~ .accordionT-content {
+  display: block;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.accordionT span:target ~ [id*="close-accordion"] {
+  display: block;
+}
+
+.accordionT span:target ~ [id*="open-accordion"] {
+  display: none;
+}
+
+.accordionT span:target ~ [id*="close-accordion"]:after {
+  border-top: 10px solid #333;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+
+/* --------------------- ACCORDION 3 -------------------- */
+.accordionC {
+  position: relative;
+  margin: 8rem auto;
+  width: 80%;
+}
+
+[id*="open-accordion"],
+[id*="close-accordion"] {
+  background: #ccc;
+  border-bottom: 1px solid #ffffff;
+  line-height: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 99%;
+}
+
+[id*="close-accordion"] {
+  display: none;
+}
+
+.accordionC a {
+  color: #000;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 2%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+[id*="open-accordion"]:after,
+[id*="close-accordion"]:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.accordionC-content {
+  background: rgba(255, 255, 255, 0.5);
+  height: 0;
+  margin: -1px auto 0;
+  padding: 0 2.5%;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+}
+
+.accordionC span:target ~ .accordionC-content {
+  display: block;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.accordionC span:target ~ [id*="close-accordion"] {
+  display: block;
+}
+
+.accordionC span:target ~ [id*="open-accordion"] {
+  display: none;
+}
+
+.accordionC span:target ~ [id*="close-accordion"]:after {
+  border-top: 10px solid #333;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+
+/* -------------------- ACCORDION 4 -------------------- */
+.accordionD {
+    position: relative;
+    margin: 8rem auto;
+    width: 80%;
+}
+
+[id*="open-accordion"],
+[id*="close-accordion"] {
+  background: #ccc;
+  border-bottom: 1px solid #ffffff;
+  line-height: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 99%;
+}
+
+[id*="close-accordion"] {
+  display: none;
+}
+
+.accordionD a {
+  color: #000;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 2%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+[id*="open-accordion"]:after,
+[id*="close-accordion"]:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.accordionD-content {
+  background: rgba(255, 255, 255, 0.5);
+  height: 0;
+  margin: -1px auto 0;
+  padding: 0 2.5%;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+}
+
+.accordionD span:target ~ .accordionD-content {
+  display: block;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.accordionD span:target ~ [id*="close-accordion"] {
+  display: block;
+}
+
+.accordionD span:target ~ [id*="open-accordion"] {
+  display: none;
+}
+
+.accordionD span:target ~ [id*="close-accordion"]:after {
+  border-top: 10px solid #333;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+
+/* ------------------- ACCORDION 5 ----------------- */
+
+.accordionE {
+    position: relative;
+    margin: 8rem auto;
+    width: 80%;
+}
+
+[id*="open-accordion"],
+[id*="close-accordion"] {
+  background: #ccc;
+  border-bottom: 1px solid #ffffff;
+  line-height: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 99%;
+}
+
+[id*="close-accordion"] {
+  display: none;
+}
+
+.accordionE a {
+  color: #000;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 2%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+[id*="open-accordion"]:after,
+[id*="close-accordion"]:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.accordionE-content {
+  background: rgba(255, 255, 255, 0.5);
+  height: 0;
+  margin: -1px auto 0;
+  padding: 0 2.5%;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+}
+
+.accordionE span:target ~ .accordionE-content {
+  display: block;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.accordionE span:target ~ [id*="close-accordion"] {
+  display: block;
+}
+
+.accordionE span:target ~ [id*="open-accordion"] {
+  display: none;
+}
+
+.accordionE span:target ~ [id*="close-accordion"]:after {
+  border-top: 10px solid #333;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}

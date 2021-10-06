@@ -1,5 +1,31 @@
+@media only screen and (max-width: 600px) {
+  .meetTeam {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contactUs {
+    padding-top: 50px;
+    font-size: 15px;
+  }
+
+  .member {
+    margin-left: 1.5rem;
+  }
+
+  span {
+    position: relative;
+    display: inline-flex;
+    margin: 0;
+  }
+}
+
+#bodyForm {
+  display: center;
+}
+
 .allForm {
-  border-radius: 5px;
   padding: 20px;
   margin-left: 20%;
   margin-right: 20%;
@@ -33,7 +59,7 @@ input[type="email"] {
 }
 
 textarea {
-  width: 80%;
+  width: 100%;
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -43,46 +69,6 @@ textarea {
   margin: 12px 0;
 }
 
-.btn {
-  cursor: pointer;
-  position: relative;
-  padding: 10px 20px;
-  background: white;
-  font-size: 22px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  transition: all 1s;
-}
-.btn:after,
-.btn:before {
-  content: " ";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  border: 0px solid #fff;
-  transition: all 1s;
-}
-.btn:after {
-  top: -1px;
-  left: -1px;
-  border-top: 5px solid black;
-  border-left: 5px solid black;
-}
-.btn:before {
-  bottom: -1px;
-  right: -1px;
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
-}
-.btn:hover {
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-.btn:hover:before,
-.btn:hover:after {
-  width: 100%;
-  height: 100%;
-}
 .data-btn {
   margin-top: 10px;
   height: 50px;
@@ -90,9 +76,53 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+
+span {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+span a:before,
+span a:after {
+  position: absolute;
+  content: "Submit Suggestion";
+  height: 55px;
+  width: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after {
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
 
 .meetTeam {
   text-align: center;
+  display: center;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -116,6 +146,7 @@ textarea {
   width: 150px;
   margin-bottom: 80px;
   margin-top: 25px;
+  margin-left: 1rem;
 }
 
 .member::before,
@@ -127,15 +158,18 @@ textarea {
   z-index: -1;
   border: 2px solid rgb(49, 49, 49);
   transition: all 0.25s ease-out;
+  border-radius: 5px;
 }
 .member::before {
   background-color: rgb(49, 49, 49);
   top: -15px;
   left: -15px;
+  border-radius: 5px;
 }
 .member::after {
   bottom: -15px;
   right: -15px;
+  border-radius: 5px;
 }
 .member:hover::before {
   top: 15px;
@@ -153,6 +187,7 @@ textarea {
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  border-radius: 5px;
 }
 
 .member-name {
@@ -177,6 +212,7 @@ textarea {
 .card-title {
   background-color: black;
   color: white;
-  font-size: 16px;
+  font-size: 13px;
   padding: 16px 32px;
+  border-radius: 5px;
 }
