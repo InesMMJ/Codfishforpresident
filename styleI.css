@@ -43,52 +43,55 @@ textarea {
   margin: 12px 0;
 }
 
-.btn {
-  cursor: pointer;
-  position: relative;
-  padding: 10px 20px;
-  background: white;
-  font-size: 22px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  transition: all 1s;
-}
-.btn:after,
-.btn:before {
-  content: " ";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  border: 0px solid #fff;
-  transition: all 1s;
-}
-.btn:after {
-  top: -1px;
-  left: -1px;
-  border-top: 5px solid black;
-  border-left: 5px solid black;
-}
-.btn:before {
-  bottom: -1px;
-  right: -1px;
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
-}
-.btn:hover {
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-.btn:hover:before,
-.btn:hover:after {
-  width: 100%;
-  height: 100%;
-}
 .data-btn {
   margin-top: 10px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+
+span {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+span a:before,
+span a:after {
+  position: absolute;
+  content: "Submit Suggestion";
+  height: 55px;
+  width: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after {
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
 }
 
 .meetTeam {
