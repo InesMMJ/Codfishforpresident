@@ -1,6 +1,8 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: "Roboto", sans-serif;
+}
 
+body {
   color: black;
   line-height: 1.6;
   height: 100vh;
@@ -96,6 +98,7 @@ section#rest {
   transform: scaleX(-1);
   padding-top: 6%;
   text-align: center;
+  height: fit-content;
 }
 
 .newContainer {
@@ -110,10 +113,10 @@ section#rest {
 
 .box1 {
   display: flex;
-  width: 80%;
+  width: 70%;
 
-  height: 80%;
-  padding: 70px 20px;
+  height: 100%;
+  padding: 30px;
 }
 .multibox2 {
   transform: scaleX(-1);
@@ -132,8 +135,15 @@ section#rest {
   border: 0.4rem solid white;
   margin-bottom: 0%;
   border-radius: 25px;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
+.img2 {
+  width: 100%;
+  border: 0.4rem solid white;
+  margin-bottom: 15%;
+  border-radius: 25px;
+}
+
 .title-italic {
   font-family: "Lato", sans-serif;
   font-style: italic;
@@ -227,6 +237,15 @@ h1 {
   transition: all 0.1s ease;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
+}
+.accordion-content ul li {
+  font-size: 16px;
+  list-style: none;
+  text-align: justify;
+}
+.accordion-content p {
+  font-size: 14px;
+  text-align: justify;
 }
 
 .accordion span:target ~ .accordion-content {
@@ -512,4 +531,38 @@ h1 {
   border-top: 10px solid #333;
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
+}
+
+.accordionT-content ul li {
+  font-size: 16px;
+  list-style: none;
+  text-align: justify;
+}
+.accordionT-content p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.accordionC-content ul li {
+  font-size: 16px;
+  list-style: none;
+  text-align: justify;
+}
+.accordionC-content p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.accordionD-content ul li {
+  font-size: 16px;
+  list-style: none;
+  text-align: justify;
+}
+.accordionD-content p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+footer {
+  transform: scaleX(-1);
 }
