@@ -117,8 +117,8 @@ ul li a:hover:before {
 .textD {
   position: absolute;
   display: flex;
-  width: 200px;
-  height: 200px;
+  width: 8rem;
+  height: 13rem;
   justify-content: center;
   top: 25%;
 }
