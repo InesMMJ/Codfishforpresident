@@ -878,8 +878,11 @@ ________________________________________*/
     border-radius: 25px;
     margin-top: 0%;
   }
+  .rest1 {
+    height: fit-content;
+  }
 }
-@media only screen and (min-width: 728px) {
+@media only screen and (max-width: 768px) {
   /* .navbar2 {
     display: none;
   }
@@ -915,7 +918,7 @@ ________________________________________*/
   .inbox1 {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
     justify-content: flex-start;
     align-items: center;
   }
@@ -975,5 +978,19 @@ ________________________________________*/
   }
   .navbar2 {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar2 {
+    display: none;
+  }
+
+  .inbox1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
