@@ -91,35 +91,45 @@ section p {
 }
 
 section#home {
-  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
-
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615f3513253dc40d37b96e56/download/testbackground4.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding-top: 6%;
   text-align: center;
 }
 
 section#facts {
-  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615f3513253dc40d37b96e56/download/testbackground4.png");
   transform: scaleX(-1);
+
   padding-top: 6%;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 section#recipe {
-  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615f3513253dc40d37b96e56/download/testbackground4.png");
   padding-top: 6%;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 section#rest {
-  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615f3513253dc40d37b96e56/download/testbackground4.png");
   transform: scaleX(-1);
   padding-top: 6%;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 section#form {
-  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615f3513253dc40d37b96e56/download/testbackground4.png");
   padding-top: 6%;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 /* TESTS NAVBAR FROM HUGO --------------------------- */
 
@@ -683,7 +693,7 @@ ________________________________________*/
 
 [id*="open-accordion"],
 [id*="close-accordion"] {
-  background: #ccc;
+  background: rgb(161, 161, 161);
   border-bottom: 1px solid #ffffff;
   line-height: 40px;
   height: 40px;
@@ -839,6 +849,15 @@ ________________________________________*/
     scroll-snap-type: none;
   }
 
+  .accordion,
+  .accordionC,
+  .accordionE {
+    width: 65%;
+  }
+  .accordionT,
+  .accordionD {
+    width: 60%;
+  }
   /*  .navbar2 {
     display: none;
     transform: scale(0.8);
@@ -872,6 +891,16 @@ ________________________________________*/
   } */
 }
 @media only screen and (max-width: 320px) {
+  .accordion,
+  .accordionC,
+  .accordionE {
+    width: 50%;
+  }
+  .accordionT,
+  .accordionD {
+    width: 45%;
+  }
+
   .box1 {
     display: flex;
     flex-direction: column;
@@ -996,6 +1025,21 @@ ________________________________________*/
   }
 
   .inbox1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .inbox2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .inbox3 {
     display: flex;
     flex-direction: column;
     width: 100%;
