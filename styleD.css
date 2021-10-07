@@ -117,12 +117,12 @@ ul li a:hover:before {
 .textD {
   position: absolute;
   display: flex;
-  width: 200px;
-  height: 200px;
+  width: 8rem;
+  height: 13rem;
   justify-content: center;
   top: 25%;
 }
-@media (max-width: 769px) {
+@media only screen and (max-width: 600px) {
   section {
     position: fixed;
     max-width: 100%;
@@ -173,18 +173,24 @@ ul li a:hover:before {
   canvas {
     position: absolute;
     touch-action: none;
-    bottom: 50px;
+
     opacity: 15%;
+    height: 600px;
+    left: 10%;
+    display: flex;
+    top: -20px;
   }
   ul {
     position: relative;
     display: flex;
     top: 40%;
+    z-index: 11;
   }
   ul li {
     position: relative;
     list-style: none;
     margin: 0.25rem;
+    z-index: 11;
   }
   ul li a {
     position: relative;
@@ -206,22 +212,31 @@ ul li a:hover:before {
     box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     overflow: hidden;
-    transition: top 0.5s, z-index 0s, transform 0.5s;
-    transition-delay: 0.5s, 0.5s, 0s;
-  }
-  canvas {
-    position: relative;
-    touch-action: none;
-    top: 0;
-    opacity: 15%;
+    transition: none;
   }
 
+  ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  ul li a:hover {
+    transition-delay: 0s, 0.5s, 0.5s;
+    top: -95px;
+    z-index: 11;
+  }
   .textD {
     display: flex;
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     position: absolute;
     justify-content: center;
-    top: 37%;
+    right: 32%;
+    top: 26.5%;
   }
 }
