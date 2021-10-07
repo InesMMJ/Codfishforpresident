@@ -19,11 +19,12 @@ body {
 }
 .navbar2 {
   position: fixed;
-  top: 3rem;
-  z-index: 1;
+  top: 4rem;
+  z-index: 0;
   display: flex;
   width: 100%;
   height: 60px;
+  font-weight: bold;
 }
 
 .navbar2 ul {
@@ -31,13 +32,13 @@ body {
   list-style: none;
   width: 100%;
   justify-content: center;
-  background: none;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .navbar2 ul li {
-  margin: 0 1rem;
-  padding: 1rem;
+  margin: 0 0.5rem;
   background: none;
 }
+
 .navbar2 ul li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -74,31 +75,38 @@ section p {
 }
 
 section#home {
-  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
-
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615f3513253dc40d37b96e56/download/testbackground4.png%22");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding-top: 6%;
   text-align: center;
 }
 
 section#facts {
-  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615f3513253dc40d37b96e56/download/testbackground4.png%22");
   transform: scaleX(-1);
   padding-top: 6%;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 section#recipe {
-  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615f3513253dc40d37b96e56/download/testbackground4.png%22");
   padding-top: 6%;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 section#rest {
-  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615822860a3e2d5f6268f818/download/back3.png");
+  background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615f3513253dc40d37b96e56/download/testbackground4.png%22");
   transform: scaleX(-1);
   padding-top: 6%;
   text-align: center;
   height: fit-content;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .newContainer {
@@ -565,4 +573,83 @@ h1 {
 
 footer {
   transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 600px) {
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 0;
+    padding-top: 6%;
+  }
+  .mainbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    scroll-snap-align: center;
+  }
+
+  .navbar2 {
+    display: none;
+  }
+
+  .title-italic {
+    transform: scale(0.8);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    /*smooth*/
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+  }
+
+  .img1,
+  .img2 {
+    margin-top: 0;
+    max-width: fit-content;
+    height: 40%;
+    border: none;
+    border-radius: 0;
+  }
+
+  .accordion,
+  .accordionT,
+  .accordionC,
+  .accordionD {
+    width: 80%;
+  }
+
+  /* section#home,
+  section#facts,
+  section#rest,
+  section#recipe {
+    background: none;
+  } */
+
+  .accordionT-content,
+  .accordion-content,
+  .accordionC-content,
+  .accordionD-content {
+    background-color: rgb(240, 235, 235);
+  }
 }
