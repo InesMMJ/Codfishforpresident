@@ -114,3 +114,114 @@ ul li a:before {
 ul li a:hover:before {
   transform: skewX(45deg) translateX(-150px);
 }
+.textD {
+  position: absolute;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  top: 25%;
+}
+@media (max-width: 769px) {
+  section {
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://trello.com/1/cards/615470a3f64c0261f0d748e9/attachments/615470b001f55a1299886f0a/previews/615470b201f55a1299886f22/download/jeremy-bishop-1braZySlEKA-unsplash.jpg")
+      no-repeat bottom bottom/cover;
+  }
+  section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    z-index: 10;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+  }
+  section .colorD {
+    position: absolute;
+    filter: blur(150px);
+  }
+  section .colorD:nth-child(1) {
+    top: -350px;
+    background: rgba(10, 10, 10, 0.596);
+    width: 600px;
+    height: 600px;
+  }
+
+  section .colorD:nth-child(2) {
+    bottom: -150px;
+    left: 100px;
+    background: rgba(9, 25, 27, 0.281);
+    width: 500px;
+    height: 500px;
+  }
+
+  section .colorD:nth-child(3) {
+    bottom: -50px;
+    right: 0;
+    background: rgba(36, 33, 23, 0.377);
+    width: 300px;
+    height: 300px;
+  }
+  canvas {
+    position: absolute;
+    touch-action: none;
+    bottom: 50px;
+    opacity: 15%;
+  }
+  ul {
+    position: relative;
+    display: flex;
+    top: 40%;
+  }
+  ul li {
+    position: relative;
+    list-style: none;
+    margin: 0.25rem;
+  }
+  ul li a {
+    position: relative;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    z-index: 11;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    overflow: hidden;
+    transition: top 0.5s, z-index 0s, transform 0.5s;
+    transition-delay: 0.5s, 0.5s, 0s;
+  }
+  canvas {
+    position: relative;
+    touch-action: none;
+    top: 0;
+    opacity: 15%;
+  }
+
+  .textD {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    justify-content: center;
+    top: 37%;
+  }
+}
