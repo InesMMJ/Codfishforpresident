@@ -21,6 +21,10 @@
   }
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 #bodyForm {
   display: center;
 }
@@ -76,7 +80,6 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
 
 span {
   position: relative;
@@ -92,7 +95,7 @@ span a {
   transform-style: preserve-3d;
   transform: translateZ(-25px);
   transition: transform 0.25s;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 span a:before,
 span a:after {
