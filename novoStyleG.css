@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 .logoHS {
   width: 6.5rem;
@@ -17,7 +18,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 
   color: black;
-  line-height: 1.6;
+  line-height: 1.5;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -33,11 +34,12 @@ body {
 }
 .navbar2 {
   position: fixed;
-  top: 3rem;
+  top: 4rem;
   z-index: 0;
   display: flex;
   width: 100%;
   height: 60px;
+  font-weight: bold;
 }
 
 .navbar2 ul {
@@ -45,11 +47,12 @@ body {
   list-style: none;
   width: 100%;
   justify-content: center;
-  background: none;
+  background-color: rgba(255, 255, 255, 0.7);
 }
+
 .navbar2 ul li {
-  margin: 0 1rem;
-  padding: 1rem;
+  margin: 0 0.5rem;
+
   background: none;
 }
 .navbar2 ul li a {
@@ -312,7 +315,7 @@ h1 {
   color: #000000;
   font-weight: normal;
   font-size: 2.5rem;
-  text-align: center;
+  text-align: justify;
 }
 
 /*_________________  Accordion
@@ -380,6 +383,7 @@ ________________________________________*/
   transition: all 0.1s ease;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
+  text-align: justify;
 }
 
 .accordion span:target ~ .accordion-content {
@@ -467,6 +471,7 @@ ________________________________________*/
   transition: all 0.1s ease;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
+  text-align: justify;
 }
 
 .accordionT span:target ~ .accordionT-content {
@@ -554,6 +559,7 @@ ________________________________________*/
   transition: all 0.1s ease;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
+  text-align: justify;
 }
 
 .accordionC span:target ~ .accordionC-content {
@@ -642,6 +648,7 @@ ________________________________________*/
   transition: all 0.1s ease;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
+  text-align: justify;
 }
 
 .accordionD span:target ~ .accordionD-content {
@@ -731,6 +738,7 @@ ________________________________________*/
   transition: all 0.1s ease;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
+  text-align: justify;
 }
 
 .accordionE span:target ~ .accordionE-content {
@@ -768,6 +776,7 @@ ________________________________________*/
     transform: scale(0.9);
     width: 100vh;
   }
+
   .inbox1 {
     display: flex;
     flex-direction: column;

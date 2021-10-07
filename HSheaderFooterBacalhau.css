@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 a {
@@ -124,9 +125,8 @@ a {
   top: 0;
 }
 
-.logoHS{
+.logoHS {
   width: 4rem;
-  
 }
 
 /* 48em = 768px */
