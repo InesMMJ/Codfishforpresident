@@ -872,8 +872,26 @@ ________________________________________*/
     margin-top: 0%;
   }
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar2 {
     display: none;
+  }
+  .box1 {
+    transform: scale(0.9);
+    width: 100vh;
+  }
+  iframe {
+    margin-top: 0%;
+    width: 100%;
+    height: 30%;
+    border-radius: 25px;
+    margin-top: 10%;
+  }
+  .img1 {
+    width: 60%;
+    border: 0.4rem solid white;
+    margin-bottom: 0%;
+    border-radius: 25px;
+    margin-top: 1rem;
   }
 }
