@@ -132,36 +132,6 @@ section#form {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-/* TESTS NAVBAR FROM HUGO --------------------------- */
-
-/* .navigation2 ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: center;
-}
-.navigation2 ul li {
-  margin: 0 1rem;
-  padding: 1rem;
-}
-.navigation2 ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #f4f4f4;
-}
-.navigation2 ul li a:hover {
-  color: lightblue;
-}
-
-.navigation2 {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  width: 100%;
-  height: 60px;
-  background-color: black;
-} */
 
 .box1 {
   display: flex;
@@ -170,6 +140,15 @@ section#form {
   height: 100%;
   padding: 30px;
 }
+.box2 {
+  display: flex;
+  width: 100%;
+
+  height: 100%;
+  padding: 30px;
+  padding-top: 6rem;
+}
+
 .inbox1 {
   display: flex;
   flex-direction: column;
@@ -195,7 +174,7 @@ section#form {
 }
 
 iframe {
-  margin-top: 27%;
+  margin-top: 20%;
   width: 60%;
   height: 30%;
   border-radius: 25px;
@@ -304,6 +283,13 @@ span a:hover {
   flex-direction: column;
   justify-content: center;
   padding-left: 1rem;
+}
+.accordion-content p,
+.accordionC-content p,
+.accordionD-content p,
+.accordionE-content p,
+.accordionT-content p {
+  font-size: 20px;
 }
 
 /* ----------------- ACCORDION ----------------- */
@@ -775,7 +761,10 @@ ________________________________________*/
 
 .footer {
   display: flex;
-  padding-bottom: 2.5rem;
+  padding-bottom: 7rem;
+}
+.mobile-out {
+  padding-top: 2rem;
 }
 
 /* ------------ MEDIA QUERIES ------------------ */
@@ -788,7 +777,17 @@ ________________________________________*/
     transform: scale(0.9);
     width: 100vh;
   }
+  .box2 {
+    display: flex;
+    flex-direction: column;
 
+    transform: scale(0.9);
+    width: 100vh;
+  }
+  .footer {
+    display: flex;
+    padding-bottom: 2.5rem;
+  }
   .inbox1 {
     display: flex;
     flex-direction: column;
@@ -881,8 +880,19 @@ ________________________________________*/
   .accordionD {
     width: 45%;
   }
+  .footer {
+    display: flex;
+    padding-bottom: 2.5rem;
+  }
 
   .box1 {
+    display: flex;
+    flex-direction: column;
+
+    transform: scale(0.7);
+    width: 95vh;
+  }
+  .box2 {
     display: flex;
     flex-direction: column;
 
@@ -918,6 +928,21 @@ ________________________________________*/
   .mobile-out {
     display: none;
   }
+  .accordion-content p,
+  .accordionC-content p,
+  .accordionD-content p,
+  .accordionE-content p,
+  .accordionT-content p {
+    font-size: 16px;
+  }
+
+  .accordion-content li,
+  .accordionC-content li,
+  .accordionD-content li,
+  .accordionE-content li,
+  .accordionT-content li {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 768px) {
   /* .navbar2 {
@@ -945,7 +970,19 @@ ________________________________________*/
     height: max-content;
   }
    */
+
+  .footer {
+    display: flex;
+    padding-bottom: 2.5rem;
+  }
   .box1 {
+    display: flex;
+    flex-direction: column;
+
+    transform: scale(0.9);
+    width: 100vh;
+  }
+  .box2 {
     display: flex;
     flex-direction: column;
 
@@ -1066,7 +1103,8 @@ ________________________________________*/
     scroll-behavior: smooth;
     scroll-snap-type: none;
   }
+  .footer {
+    display: flex;
+    padding-bottom: 3rem;
+  }
 }
-
-
-.
