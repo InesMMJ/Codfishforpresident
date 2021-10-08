@@ -88,6 +88,7 @@ section h1 {
 
 section p {
   font-size: 1.5rem;
+  text-align: justify;
 }
 
 section#home {
@@ -177,12 +178,20 @@ section#form {
   align-items: center;
 }
 
-.img1 {
-  width: 60%;
+.img1HS {
+  width: 20rem;
   border: 0.4rem solid white;
   margin-bottom: 0%;
   border-radius: 25px;
-  margin-top: 1rem;
+  margin-top: 14rem;
+}
+
+.img1 {
+  width: 20rem;
+  border: 0.4rem solid white;
+  margin-bottom: 0%;
+  border-radius: 25px;
+  margin-top: 1.5rem;
 }
 
 iframe {
@@ -238,24 +247,6 @@ span a:hover {
   transform: translateZ(-25px) rotateX(-90deg);
 }
 /* ^^^^^^^^^^^^^BUTTON ^^^^^^^^^^^^ */
-
-.reserve {
-  background-image: url("https://trello.com/1/cards/615b69cd4921261cac3555dc/attachments/615b6f5f55a3d7835bd616ac/download/booknow2.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding: 3rem;
-
-  color: blanchedalmond;
-  margin-top: 5%;
-}
-.reserve a {
-  color: white;
-  font-size: 1.5rem;
-}
-.reserve a:hover {
-  color: lightblue;
-}
 
 #text1 {
   margin-top: 3%;
@@ -775,6 +766,17 @@ ________________________________________*/
 .nav3 {
   display: none;
 }
+.mobile-title {
+  display: none;
+}
+.mobile-title2 {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  padding-bottom: 2.5rem;
+}
 
 /* ------------ MEDIA QUERIES ------------------ */
 
@@ -858,37 +860,16 @@ ________________________________________*/
   .accordionD {
     width: 60%;
   }
-  /*  .navbar2 {
-    display: none;
-    transform: scale(0.8);
-    width: fit-content;
-    height: fit-content;
-    background: none;
-
-    top: 3.6rem;
-    z-index: 1;
-  }
-
-  .nav2 {
+  .mobile-title {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background: none;
   }
-  .navbar2 ul li {
-    margin: 0;
-
-    padding: 0;
-    padding-top: 1rem;
-    background-color: none;
+  .mobile-title2 {
+    display: flex;
+    transform: scaleX(-1);
   }
-  .navbar2 ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
-    font-style: italic;
-    background: none;
-  } */
+  .mobile-out {
+    display: none;
+  }
 }
 @media only screen and (max-width: 320px) {
   .accordion,
@@ -918,6 +899,24 @@ ________________________________________*/
   }
   .rest1 {
     height: fit-content;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    /*smooth*/
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+  }
+  .mobile-title {
+    display: flex;
+  }
+  .mobile-title2 {
+    display: flex;
+    transform: scaleX(-1);
+  }
+  .mobile-out {
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1017,6 +1016,16 @@ ________________________________________*/
   .navbar2 {
     display: none;
   }
+  .mobile-title {
+    display: flex;
+  }
+  .mobile-title2 {
+    display: flex;
+    transform: scaleX(-1);
+  }
+  .mobile-out {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1046,4 +1055,18 @@ ________________________________________*/
     justify-content: flex-start;
     align-items: center;
   }
+  section {
+    height: fit-content;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    /*smooth*/
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+  }
 }
+
+
+.
