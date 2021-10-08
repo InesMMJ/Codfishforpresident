@@ -618,8 +618,7 @@ footer {
   section#facts,
   section#recipe,
   section#rest {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
   .navbar2 {
