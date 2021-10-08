@@ -77,7 +77,7 @@ section p {
 section#home {
   background-image: url("https://trello.com/1/cards/615572020b6c7379becc7490/attachments/615f3513253dc40d37b96e56/download/testbackground4.png%22");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 89%;
   padding-top: 6%;
   text-align: center;
 }
@@ -88,7 +88,7 @@ section#facts {
   padding-top: 6%;
   text-align: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 89%;
 }
 
 section#recipe {
@@ -96,7 +96,7 @@ section#recipe {
   padding-top: 6%;
   text-align: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 89%;
 }
 
 section#rest {
@@ -571,8 +571,13 @@ h1 {
   text-align: justify;
 }
 
-footer {
+.recipeFooter {
   transform: scaleX(-1);
+}
+
+footer {
+  display: flex;
+  padding-bottom: 3rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -593,6 +598,11 @@ footer {
     align-items: center;
   }
 
+  .multibox1,
+  .multibox2 {
+    padding-top: 18px;
+  }
+
   section {
     display: flex;
     flex-direction: column;
@@ -602,6 +612,13 @@ footer {
     width: 100%;
     height: fit-content;
     scroll-snap-align: center;
+  }
+
+  section#home,
+  section#facts,
+  section#recipe,
+  section#rest {
+    background-size: 100% 100%;
   }
 
   .navbar2 {
@@ -632,24 +649,14 @@ footer {
     border-radius: 0;
   }
 
+  .img2 {
+    margin-bottom: 0;
+  }
+
   .accordion,
   .accordionT,
   .accordionC,
   .accordionD {
     width: 80%;
-  }
-
-  /* section#home,
-  section#facts,
-  section#rest,
-  section#recipe {
-    background: none;
-  } */
-
-  .accordionT-content,
-  .accordion-content,
-  .accordionC-content,
-  .accordionD-content {
-    background-color: rgb(240, 235, 235);
   }
 }
