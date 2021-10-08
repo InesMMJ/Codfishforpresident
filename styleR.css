@@ -575,6 +575,13 @@ footer {
   transform: scaleX(-1);
 }
 
+.accordionT-content,
+.accordion-content,
+.accordionC-content,
+.accordionD-content {
+  background-color: rgb(240, 235, 235);
+}
+
 @media only screen and (max-width: 600px) {
   .box1 {
     display: flex;
@@ -627,9 +634,13 @@ footer {
   .img2 {
     margin-top: 0;
     max-width: fit-content;
-    height: 40%;
+    height: 30%;
     border: none;
     border-radius: 0;
+  }
+
+  .img2 {
+    margin-bottom: 0;
   }
 
   .accordion,
